@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #223243;
+}
+.container{
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px solid #223243;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.35),
+     inset -5px -5px 15px rgba(255,255,255,0.1),
+     inset 5px 5px 15px rgba(0,0,0,0.35);
+    width: 90%;
+}
+.container .form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 38px;
+}
+.piet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.container .form .inputbox{
+    position: relative;
+    width: 540px;
+
+}
+h1{
+    color:yellow;
+}
+h2{
+    color: rgb(0, 255, 132);
+}
+.container .form .inputbox span{
+    color: #fff;
+    font-size: 22px;
+    margin-left: -20px;
+}
+.container .form .inputbox {
+    color: #fff;
+    margin: 25px;
+    font-size: 22px;
+}
+.container .form .inputbox input{
+width: 241px;
+height: 37px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #223243;
+    color: #fff;
+    font-size: 20px;
+
+}
+.container .form .gender{
+    color: #fff;
+    font-size:22px ;
+}
+.container .form .gender .label1{
+    box-sizing: border-box;
+    float:right;
+    position: absolute;
+    right: 863px;
+    top: 413px;
+}
+.container .form .gender .label2{
+    box-sizing: border-box;
+    float:right;
+    position: absolute;
+    right: 722px;
+    top: 413px;
+
+}
+.container .form .gender .radio1{
+    position: absolute;
+    right: 836px;
+    top: 419px;
+}
+.container .form .gender .radio2{
+    position: absolute;
+    right: 696px;
+    top: 419px;
+
+}
+.container .form .inputbox .name{
+margin-left: 30px;
+}
+.container .form .inputbox .time{
+    margin-left: 191px;
+}
+.container .form .inputbox .email{
+margin-left: 30px;
+}
+.container .form .inputbox .textarea_text{
+    position: absolute;
+    top: -4px;
+}
+.container .form .inputbox .textarea{
+    position: relative;
+    right: -187px;
+    background-color: #223243;
+    color: #fff;
+    font-size: 20px;
+}
+.submit input{
+    background-color:#223243;
+    color: #fff;
+    border-radius: 20px;
+    width: 332px;
+    height: 38px;
+    position: relative;
+    right: -208px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.reset input{
+    background-color:#223243;
+    color: #fff;
+    border-radius: 20px;
+    width: 332px;
+    height: 38px;
+    position: relative;
+    right: -208px;
+    cursor: pointer;
+}
+.submit input:hover{
+    background-color: aqua;
+    color: black;
+}
+.reset input:hover{
+    background-color: aqua;
+    color: black;
+}
+.row label{
+color: bisque;
+}
+
+/* ------------------break----------------- */
+@media (max-width: 1200px){
+    .container .form .gender .label1{
+        position: absolute;
+        right: 628px;
+        top: 413px;
+    }
+    .container .form .gender .label2{
+       
+        position: absolute;
+        right: 481px;
+        top: 413px;
+    
+    }
+    .container .form .gender .radio1{
+        position: absolute;
+        right: 605px;
+        top: 419px;
+    }
+    .container .form .gender .radio2{
+        position: absolute;
+        right: 453px;
+        top: 419px;
+    
+    }
+    .submit input{
+        margin-left: -78px;
+    }
+    .reset input{
+        margin-left: -78px;
+    }
+
+}
+@media (max-width: 992px){
+
+    .container .form .gender .label1{
+        position: absolute;
+        right: 516px;
+        top: 307px;
+    }
+    .container .form .gender .label2{
+       
+        position: absolute;
+        right: 385px;
+        top: 307px;
+    
+    }
+    .container .form .gender .radio1{
+        position: absolute;
+        right: 494px;
+        top: 315px;
+    }
+    .container .form .gender .radio2{
+        position: absolute;
+        right: 360px;
+        top: 315px;
+    
+    }
+    .piet{
+        font-size: 28px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+@media (max-width: 768px){
+
+    .container .form .gender .label1{
+        position: absolute;
+        right: 409px;
+        top: 420px;
+    }
+    .container .form .gender .label2{
+       
+        position: absolute;
+        right: 258px;
+        top: 420px;
+    
+    }
+    .container .form .gender .radio1{
+        position: absolute;
+        right: 386px;
+        top: 427px;
+    }
+    .container .form .gender .radio2{
+        position: absolute;
+        right: 237px;
+        top: 427px;
+    
+    }
+}
+@media (max-width: 576px){
+    .container .form .inputbox span{
+        margin-left:43px;
+    }
+        .container .form .gender .label1{
+            position: absolute;
+            right: 250px;
+            top: 420px;
+        }
+        .container .form .gender .label2{
+           
+            position: absolute;
+            right: 115px;
+            top: 420px;
+        
+        }
+        .container .form .gender .radio1{
+            position: absolute;
+            right: 224px;
+            top: 427px;
+        }
+        .container .form .gender .radio2{
+            position: absolute;
+            right: 94px;
+            top: 427px;
+        
+        }
+        .container .form .inputbox .textarea{
+            margin-left: 61px;
+            width: 247px;
+        }
+        .container .form .inputbox .time{
+            margin-left: 251px;
+            
+        }
+        .container .form .gender{
+            margin-left: 63px;
+        }
+    }
+
+
+@media (max-width: 300px){
+
+    .container .form .inputbox span{
+        margin-left:43px;
+    }
+        .container .form .gender .label1{
+            position: absolute;
+            right: 250px;
+            top: 420px;
+        }
+        .container .form .gender .label2{
+           
+            position: absolute;
+            right: 115px;
+            top: 420px;
+        
+        }
+        .container .form .gender .radio1{
+            position: absolute;
+            right: 224px;
+            top: 427px;
+        }
+        .container .form .gender .radio2{
+            position: absolute;
+            right: 94px;
+            top: 427px;
+        
+        }
+        .container .form .inputbox .textarea{
+            margin-left: 61px;
+            width: 247px;
+        }
+        .container .form .inputbox .time{
+            margin-left: 251px;
+            
+        }
+        .container .form .gender{
+            margin-left: 63px;
+        }
+}
