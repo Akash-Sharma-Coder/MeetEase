@@ -284,7 +284,7 @@ color: bisque;
     }
 
 
-@media (max-width: 300px){
+@media (max-width: 450px){
 
     .container .form .inputbox span{
         margin-left:43px;
@@ -323,4 +323,58 @@ color: bisque;
         .container .form .gender{
             margin-left: 63px;
         }
+}
+@media (max-width: 365px){
+    .piet {
+        font-size: 18px;
+        justify-content: center;
+        text-align: center;
+      }
+      .container .form .inputbox span{
+        font-size: 16px;
+        margin-left: 126px;
+      }
+      .container .form .gender{
+        font-size: 16px;
+        margin-left: 155px;
+      }
+      .container .form .gender .label1{
+        position: absolute;
+        right: 156px;
+        top: 399px;
+    }
+    .container .form .gender .label2{
+       
+        position: absolute;
+        right: 69px;
+        top: 400px;
+    
+    }
+    .container .form .gender .radio1{
+        position: absolute;
+        right: 139px;
+        top: 401px;
+    }
+    .container .form .gender .radio2{
+        position: absolute;
+        right: 52px;
+        top: 401px;
+    
+    }
+    .container .form .inputbox input{
+        width: 134px;
+        height:29px;
+        border-radius: 5px;
+    }
+    .container .form .inputbox .textarea{
+        width: 134px;
+        height:29px;
+        margin-left: 96px;
+    }
+    .container .form .inputbox .time{
+        width: 134px;
+        height:29px;
+        margin-left: 283px;
+        
+    }
 }
