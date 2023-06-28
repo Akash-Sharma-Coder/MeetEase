@@ -1,3 +1,22 @@
+<?php
+include 'connect.php';
+if(isset($_POST['submit'])){
+    $name=$_POST['name'];
+    $gender=$_POST['gender'];
+    $number=$_POST['number'];
+    $email=$_POST['email'];
+    $duration=$_POST['duration'];
+    $textarea=$_POST['textarea'];
+
+    $sql="insert into user (name,gender,number,purpose,duration,email) values('$name',' $gender','$number','$textarea','$duration','$email')";
+    $result=mysqli_query($con,$sql);
+    if($result){
+        die(mysqli_error($con));
+    }
+    
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +41,7 @@
         <div class="form">
             <h1>MEET EASE</h1>
             <h2>Welcome to PIET</h2>
-    <form action="" method="post">
+    <form  method="post">
     <div class="inputbox">
         <span>Enter your name: </span>
         <input class="name" type="text" name="name">
@@ -31,9 +50,9 @@
     <div class="gender">
         <span>Gender:</span>
         <label class="label1">Male</label>
-        <input class="radio1" type="radio" name="gender">
+        <input class="radio1" type="radio" name="gender" value="Male">
         <label class="label2">Female</label>
-        <input class="radio2" type="radio" name="gender">
+        <input class="radio2" type="radio" name="gender" value="femail">
         
         
     </div>
@@ -48,11 +67,11 @@
     </div>
     <div class="inputbox">
         <span class="textarea_text">Enter your purpose: </span>
-        <textarea style="border-radius: 12px;" class="textarea" name="" id="" cols="30" rows="2" placeholder="Enter your Purpose"></textarea>
+        <textarea style="border-radius: 12px;" class="textarea" name="textarea" id="" cols="30" rows="2" placeholder="Enter your Purpose"></textarea>
     </div>
     <div class="inputbox">
         <span class="textarea_text">Enter Duration(min): </span>
-        <input class="time" type="number" placeholder="meeting Duration">
+        <input class="time" type="number" placeholder="meeting Duration" name="duration">
     </div>
     <div class="row">
         <div class="col-lg-6" align="center">
@@ -60,22 +79,22 @@
             <div id="my_camera" class="pre_capture_frame" ></div>
             <input type="hidden" name="captured_image_data" id="captured_image_data">
             <br>
-            <input type="button" class="btn btn-info btn-round btn-file" value="Take Snapshot" onClick="take_snapshot()">	
+            <input type="button" class="btn btn-info btn-round btn-file" value="Take Snapshot" onClick="take_snapshot()" >	
         </div>
         <div class="col-lg-6" align="center">
             <label>Result</label>
             <div id="results" >
-                <img style="width: 350px; height: 287px;" class="after_capture_frame" src="image_placeholder.jpg" />
+                <img style="width: 350px; height: 287px;" class="after_capture_frame" src="image_placeholder.jpg" / name="image">
             </div>
             <br>
-            <button type="button" class="btn btn-success" onclick="saveSnap()">Save Picture</button>
+            <button type="button" class="btn btn-success" onclick="saveSnap()" name="imagetaken">Save Picture</button>
         </div>	
       </div><!--  end row -->
       <div class="submit">
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" name="submit">
     </div>
     <div class="reset">
-        <input type="reset" value="reset">
+        <input type="reset" value="reset"name="reset">
     </div>
     </form>
 </div>

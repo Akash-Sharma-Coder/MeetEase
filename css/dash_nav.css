@@ -252,7 +252,7 @@ body.dark .switch::before{
     padding: 8px 40px;
 }
 .sidebar.close ~ .home{
-    left: 88px;
+    left: 168px;
     width: calc(100% -88px);
 }
 #Appointments{
